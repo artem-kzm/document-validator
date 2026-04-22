@@ -44,14 +44,14 @@ If a tenant has no rules, the `fallback` is used:
 
 ```php
 return [
-    'default' => [
-        new ContentNotEmptyRule(),
-    ],
     'tenants' => [
         'tenant_1' => [
             new ContentLengthRule(minLength: 100),
             new MetadataHasKeyRule('author'),
         ],
+    ],
+    'fallback' => [
+        new ContentNotEmptyRule(),
     ],
 ];
 ```
