@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Validation\Validators;
+namespace App\Validation\Validators;
 
 use App\Document;
 use App\Validation\DocumentValidatorInterface;
